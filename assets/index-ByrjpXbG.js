@@ -9323,10 +9323,13 @@ function App() {
 }
 async function main() {
   const { worker } = await __vitePreload(async () => {
-    const { worker: worker2 } = await import("./browser-3fHkDVsH.js");
+    const { worker: worker2 } = await import("./browser-DY5teG9R.js");
     return { worker: worker2 };
   }, true ? [] : void 0);
   await worker.start({
+    serviceWorker: {
+      url: "/react-shopping-products/mockServiceWorker.js"
+    },
     onUnhandledRequest: "bypass"
   });
   client.createRoot(document.getElementById("root")).render(

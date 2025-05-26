@@ -10,7 +10,7 @@ var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot
 var __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), setter ? setter.call(obj, value) : member.set(obj, value), value);
 var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "access private method"), method);
 var _executor, _DeferredPromise_instances, decorate_fn, _a2, _executor2, _DeferredPromise_instances2, decorate_fn2, _b2, _c2, _d;
-import { E as END_POINT, m as mockProducts } from "./index-D6B_n26S.js";
+import { E as END_POINT, m as mockProducts } from "./index-ByrjpXbG.js";
 var POSITIONALS_EXP$1 = /(%?)(%([sdijo]))/g;
 function serializePositional$1(positional, flag) {
   switch (flag) {
